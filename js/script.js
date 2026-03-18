@@ -1,5 +1,10 @@
-<script>
-function changeImage(element) {
-    document.getElementById("mainProductImage").src = element.src;
-}
-</script>
+document.addEventListener("DOMContentLoaded", function () {
+    const thumbnails = document.querySelectorAll(".thumbnail");
+    const mainImage = document.getElementById("mainProductImage");
+
+    thumbnails.forEach(function (thumb) {
+        thumb.addEventListener("click", function () {
+            mainImage.src = this.src;
+        });
+    });
+});
