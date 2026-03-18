@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Refugio 23</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/producto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Refugio 23</a>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../productos.html">Productos</a></li>
+                    <li><a href="../sobremi.html">Sobre la marca</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li class="cart"><a href="../carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-detail">
+            <div class="container">
+                <div class="product-detail-content">
+                    <div class="product-gallery">
+
+                        <!-- Imagen principal -->
+                        <div class="main-image">
+                            <img id="mainProductImage" src="../assets/images/Duck-Hunt.jpg">
+                        </div>
+
+                        <!-- Miniaturas -->
+                        <div class="thumbnail-images">
+                            <img src="../assets/images/2e.jpg" onclick="changeImage(this)">
+                            <img src="../assets/images/Duck-Hunt.jpg" onclick="changeImage(this)">
+                            <img src="../assets/images/product-3.jpg" onclick="changeImage(this)">
+                            <img src="../assets/images/product-4.jpg" onclick="changeImage(this)">
+                        </div>
+
+                    </div>
+
+                    <div class="product-info">
+                        <p class="section-tag">Colección artesanal</p>
+                        <h1>Vela aromática artesanal</h1>
+                        <p class="price product-detail-price">14,95 €</p>
+                        <div class="product-variants">
+                            <p><strong>Modelo:</strong></p>
+
+                            <div class="variant-options">
+                                <button class="variant active">Bosque</button>
+                                <button class="variant">Vainilla</button>
+                                <button class="variant">Lavanda</button>
+                                <button class="variant">Canela</button>
+                                <button class="variant">Cítrico</button>
+                                <button class="variant">Madera</button>
+                                <button class="variant">Jazmín</button>
+                            </div>
+                        </div>
+
+                        <p class="product-description">
+                            Una pieza decorativa y aromática pensada para aportar
+                            calidez, personalidad y un toque especial a cualquier
+                            espacio de tu hogar.
+                        </p>
+
+                        <div class="product-meta">
+                            <p><strong>Material:</strong> Cera vegetal</p>
+                            <p><strong>Aroma:</strong> Bosque fresco</p>
+                            <p><strong>Duración:</strong> 35 horas aprox.</p>
+                        </div>
+
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <label for="quantity">Cantidad</label>
+                                <input type="number" id="quantity" name="quantity" value="1" min="1">
+                            </div>
+
+                            <a href="#" class="btn">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-extra-info">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Detalles del producto</h2>
+                    <p>
+                        Cada pieza está elaborada con mimo y pensada para unir
+                        estética, funcionalidad y experiencia sensorial.
+                    </p>
+                </div>
+
+                <div class="extra-info-grid">
+                    <article class="info-card">
+                        <h3>Hecho a mano</h3>
+                        <p>
+                            Cada producto se prepara cuidando cada detalle y con una
+                            presentación pensada para sorprender.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>Materiales seleccionados</h3>
+                        <p>
+                            Trabajamos con materiales escogidos para ofrecer calidad,
+                            durabilidad y una estética cuidada.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>Ideal para regalo</h3>
+                        <p>
+                            Una opción perfecta para sorprender con un producto bonito,
+                            útil y con personalidad.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>También te puede gustar</h2>
+                    <p>Descubre otros productos de la colección con la misma esencia visual.</p>
+                </div>
+
+                <div class="products-grid">
+                    <article class="product-card">
+                        <img src="../assets/images/product-2.jpg" alt="Pack regalo especial">
+                        <h3>Pack regalo especial</h3>
+                        <p class="price">24,90 €</p>
+                        <a href="producto.html" class="btn btn-secondary">Ver producto</a>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../assets/images/product-3.jpg" alt="Ambientador decorativo">
+                        <h3>Ambientador decorativo</h3>
+                        <p class="price">18,50 €</p>
+                        <a href="producto.html" class="btn btn-secondary">Ver producto</a>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="../assets/images/product-4.jpg" alt="Centro decorativo artesanal">
+                        <h3>Centro decorativo artesanal</h3>
+                        <p class="price">29,95 €</p>
+                        <a href="producto.html" class="btn btn-secondary">Ver producto</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>MiMarca</h3>
+                    <p>
+                        Productos artesanales pensados para aportar calidez,
+                        personalidad y detalle a cualquier espacio.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="#">Sobre la marca</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Ayuda</h3>
+                    <ul>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Envíos y devoluciones</a></li>
+                        <li><a href="#">Métodos de pago</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 MiMarca. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

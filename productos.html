@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Refugio 23</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Refugio 23</a>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="sobremi.html">Sobre la marca</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li class="cart"><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalog-hero">
+            <div class="container">
+                <div class="section-heading">
+                    <h1>Nuestra colección</h1>
+                    <p>
+                        Descubre una selección cuidada de productos que puedes personalizar pensados
+                        para aportar personalidad, calidez y detalle a tu día a día.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog-section">
+            <div class="container">
+                <div class="catalog-toolbar">
+                    <div class="catalog-filters">
+                        <button class="filter-btn active">Todos</button>
+                        <button class="filter-btn">Velas</button>
+                        <button class="filter-btn">Decoración</button>
+                        <button class="filter-btn">Packs regalo</button>
+                        <button class="filter-btn">Otros</button>
+                    </div>
+
+                    <div class="catalog-sort">
+                        <label for="sort">Ordenar por:</label>
+                        <select id="sort" name="sort">
+                            <option>Destacados</option>
+                            <option>Precio: menor a mayor</option>
+                            <option>Precio: mayor a menor</option>
+                            <option>Novedades</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="products-grid">
+                    <article class="product-card">
+                        <img src="assets/images/Duck-Hunt.jpg" alt="Vela aromática artesanal">
+                        <h3>Vela aromática artesanal</h3>
+                        <p>Una descripción breve</p>
+                        <p class="price">14,95 €</p>
+                        <a href="producto/vela.html" class="btn btn-secondary">Ver producto</a>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="assets/images/2e.jpg" alt="Pack regalo especial">
+                        <h3>Mochila</h3>
+                        <p>Mochila al vacío en poliéster 600D.</p>
+                        <p class="price">24,90 €</p>
+                        <a href="#" class="btn btn-secondary">Ver producto</a>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="assets/images/Duck-Hunt.jpg" alt="Ambientador decorativo">
+                        <h3>Ambientador decorativo</h3>
+                        <p class="price">18,50 €</p>
+                        <a href="#" class="btn btn-secondary">Ver producto</a>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="assets/images/Duck-Hunt.jpg" alt="Centro decorativo artesanal">
+                        <h3>Centro decorativo artesanal</h3>
+                        <p class="price">29,95 €</p>
+                        <a href="#" class="btn btn-secondary">Ver producto</a>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="assets/images/Duck-Hunt.jpg" alt="Set de regalo premium">
+                        <h3>Set de regalo premium</h3>
+                        <p class="price">34,90 €</p>
+                        <a href="#" class="btn btn-secondary">Ver producto</a>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="assets/images/Duck-Hunt.jpg" alt="Pieza decorativa floral">
+                        <h3>Pieza decorativa floral</h3>
+                        <p class="price">19,95 €</p>
+                        <a href="#" class="btn btn-secondary">Ver producto</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Refugio 23</h3>
+                    <p>
+                        Productos artesanales pensados para aportar calidez,
+                        personalidad y detalle a cualquier espacio.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="#">Sobre la marca</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Ayuda</h3>
+                    <ul>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Envíos y devoluciones</a></li>
+                        <li><a href="#">Métodos de pago</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Refugio 23. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
